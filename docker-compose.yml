@@ -10,8 +10,8 @@
           POSTGRES_PASSWORD:  ${POSTGRES_PASSWORD}
           POSTGRES_DB:  ${POSTGRES_DB}
       app:
-        container_name: my_app_athiphat
         image: prawee/strapi
+        container_name: my_app_athiphat
         ports: 
             - "8080:1337"
         environment:
