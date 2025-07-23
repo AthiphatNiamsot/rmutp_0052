@@ -1,5 +1,5 @@
 # API
-@pasword={$env PASSWORD}
+@password={$env PASSWORD}
 ## Getting all users
 
 GET  http://localhost:8080/api/users
