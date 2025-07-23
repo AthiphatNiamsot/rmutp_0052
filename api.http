@@ -11,7 +11,7 @@ Content-Type: application/json
 {
     "username" : "Athiphat Niamsot" ,
     "email" :  "atiphatniamsot@gmail.com",
-    "password": "{{pasword}}"
+    "password": "{{password}}"
 }
 
 #Login
