@@ -1,0 +1,17 @@
+# API
+@pasword={$env PASSWORD}
+## Getting all users
+
+GET  http://localhost:8080/api/users
+
+### create a new user 
+POST http://localhost:8080/api/auth/local/register
+Content-Type: application/json
+
+{
+    "username" : "Athiphat Niamsot" ,
+    "email" :  "atiphatniamsot@gmail.com",
+    "password": "{{pasword}}"
+}
+
+#Login
