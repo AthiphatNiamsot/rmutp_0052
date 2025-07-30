@@ -1,6 +1,9 @@
 # API
-@password={$env PASSWORD}
-## Getting all users
+@username ={{$dotenv USERNAME}}
+@password={{$dotenv PASSWORD}}
+###Getting all users
+@email={{$dotenv EMAIL}}
+@userId= 6 #
 
 GET  http://localhost:8080/api/users
 
@@ -9,9 +12,20 @@ POST http://localhost:8080/api/auth/local/register
 Content-Type: application/json
 
 {
-    "username" : "Athiphat Niamsot" ,
-    "email" :  "atiphatniamsot@gmail.com",
+    "username" : "{{username}}" ,
+    "email" :  "{{email}}",
     "password": "{{password}}"
 }
+ 
+### update a user by ID
+PUT http://localhost:8080/api/users{{{userId}}}
+Content-Type: application/json
 
-#Login
+    {
+        "username": "{{username}}",
+        "email" :"athiphatnaimsot@gmail.com"
+    }
+
+### Delete user by ID
+DELETE http://localhost:8080/api/users/{{userId}}
+
