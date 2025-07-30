@@ -12,7 +12,7 @@ datasource db {
 }
 
 model User {
-id int  @id @default(autoincrememt())
-User String @unique
-password String
+  id       Int    @id @default(autoincrement())
+  User     String @unique
+  password String
 }
