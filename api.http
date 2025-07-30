@@ -1,5 +1,5 @@
 # API
-@pasword={$env PASSWORD}
+@password={$env PASSWORD}
 ## Getting all users
 
 GET  http://localhost:8080/api/users
@@ -11,7 +11,7 @@ Content-Type: application/json
 {
     "username" : "Athiphat Niamsot" ,
     "email" :  "atiphatniamsot@gmail.com",
-    "password": "{{pasword}}"
+    "password": "{{password}}"
 }
 
 #Login
