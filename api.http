@@ -5,7 +5,6 @@
 @email={{$dotenv EMAIL}}
 @userId= 10#
 
-
 ## Getting all users
 GET  http://localhost:8080/api/users
 
